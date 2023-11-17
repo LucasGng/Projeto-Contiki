@@ -131,7 +131,7 @@ PROCESS_THREAD(monitor_temperatura, ev, data)
   if (temperatura < 35)
       {
         // Avisa que está com hipotermia 
-        sprintf(alertTemp, "!!!!!!!!! Com Hipotermia !!!!!!!: %d °C", temperatura);
+        sprintf(alertaUsuario, "!!!!!!!!! Com Hipotermia !!!!!!!: %d °C", temperatura);
         process_post(&Mostrar_alerta, PROCESS_EVENT_MSG, alertaUsuario);
 
 
